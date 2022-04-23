@@ -1,0 +1,23 @@
+<!-- fracao.html -->
+
+<canvas width="700" height="500"></canvas>
+
+<script>
+
+    function desenhaQuadrado(x, y, tamanho, cor) {
+        var tela = document.querySelector('canvas');
+        var pincel = tela.getContext('2d');
+
+        pincel.fillStyle=cor;
+        pincel.fillRect(x,y, tamanho, tamanho);
+        pincel.strokeStyle='black';
+        pincel.strokeRect(x,y, tamanho, tamanho);
+    }
+
+    desenhaQuadrado(50, 50, 100, 'green');
+    desenhaQuadrado(150, 50, 100, 'green');
+    desenhaQuadrado(250, 50, 100, 'green');
+    desenhaQuadrado(350, 50, 100, 'white');
+
+</script>
+

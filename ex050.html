@@ -1,0 +1,23 @@
+<meta charset="UTF-8"> 
+
+<script> 
+
+	function pulaLinha() {
+
+		document.write("<br>");
+	} 
+
+	function mostra(texto) {
+		
+		document.write(texto); 
+		pulaLinha();
+	}
+
+	var anoAtual = 2022; 
+	var anoAntigo = 1500;  
+	var idadeMédia = 28; 
+
+	mostra("Atualmente desde 1500, possui: ") 
+	mostra(Math.round((anoAtual - anoAntigo)/idadeMédia) + " gerações. " );
+
+</script>

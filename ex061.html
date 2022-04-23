@@ -1,0 +1,44 @@
+<meta charset="UTF-8"> 
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br><br>"); 
+
+	} 
+
+	function mostra(frase) {
+		document.write(frase); 
+		pulaLinha();
+	
+	} 
+
+    var numero = parseInt(prompt("Digite um numero de 1 a 10."))
+	 
+	if(numero <= 10) { 
+
+        for(var multiplicador = 1;multiplicador <= 10; multiplicador++) {
+
+        mostra(numero + " x " + multiplicador + " = " + (numero * multiplicador)); 
+        
+    } 
+
+    } else {
+
+        mostra("Erro no sistema");
+    }
+
+     
+
+	mostra("FIM");
+	
+
+
+
+
+
+
+</script>  
+
+
